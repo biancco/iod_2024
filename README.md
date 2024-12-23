@@ -7,7 +7,7 @@
 - Use the script to reproduce: `scripts/run_firststep.sh` first and then `run_iod.sh` to perform iod task.
 - Otherwise, you can download the model weight after firststep here: [Google Drive](https://drive.google.com/file/d/1LH7OY-uMifl2gwCFEgm6U5h_Xfh1nPcH/view?usp=sharing)
 
-## Model Performances and Logs
+## Model Performances
 
 | Setting | Year |  Achieved mAP  | Goal Performance |
 |:-------:|:----:|:--------------:|:----------------:|
