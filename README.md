@@ -9,9 +9,9 @@
 
 ## Model Performances and Logs
 
-| Setting | Year |  Achieved mAP  | Goal Performance | Logs |
-|:-------:|:----:|:--------------:|:----------------:|:----:|
-|  10-10  | 2024 |      70.1      |       67.5       | sss  |
+| Setting | Year |  Achieved mAP  | Goal Performance |
+|:-------:|:----:|:--------------:|:----------------:|
+|  10-10  | 2024 |      70.1      |       67.5       |
 
 
 
