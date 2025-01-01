@@ -19,7 +19,7 @@
 - Python version: 3.9
 - PyTorch version: 1.10.0
 - CUDA version: 11.3
-- GPU: NVIDIA GTX 1080-ti
+- GPU: NVIDIA GTX 3090
 
 
 ## How to run
