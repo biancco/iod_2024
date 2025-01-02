@@ -193,12 +193,6 @@ def main():
     
     os.environ["CUDA_VISIBLE_DEVICES"] = args.cuda_visible_devices
 
-    # if there is more than 1 gpu, set initialization for distribute training
-    torch.cuda.set_device(args.local_rank)
-    torch.distributed.init_process_group(
-        backend="nccl", init_method="env://"
-    )
-    synchronize()
     num_gpus = get_world_size()
     print("I'm using ", num_gpus, " gpus!")
 
@@ -228,7 +222,7 @@ def main():
     logger.info("Running with config:\n{}".format(cfg))
 
     # strat to train the model
-    model = train(cfg, args.local_rank, True)
+    model = train(cfg, args.local_rank, False)
 
     if not args.skip_test:
         # start to test the trained model

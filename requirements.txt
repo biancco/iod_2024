@@ -3,7 +3,7 @@ yacs
 cython
 matplotlib
 tqdm
-opencv-python
+opencv-python==4.2.0.34
 tensorboard==2.10.0
 numpy==1.21.5
 scipy==1.7.3
