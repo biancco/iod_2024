@@ -9,9 +9,9 @@
 
 ## Model Performances
 
-| Setting | Year |  Achieved mAP  | Goal Performance |
-|:-------:|:----:|:--------------:|:----------------:|
-|  10-10  | 2024 |      70.1      |       67.5       |
+| Setting | Year |  Achieved mAP  | Goal Performance | log |
+|:-------:|:----:|:--------------:|:----------------:|:---:|
+|  10-10  | 2024 |      70.1      |       67.5       |[log.txt](log.txt)|
 
 
 

@@ -1,0 +1,86 @@
+2025-01-03 15:35:42,913 Maskrcnn_benchmark_target_model INFO: Local rank: 0
+2025-01-03 15:35:42,913 Maskrcnn_benchmark_target_model INFO: Using 1 GPUs
+generalized_rcnn.py | Do not use external proposals, so use RPN.
+rpn.py | build_rpn | in_channels: 1024
+roi_heads.py | build_roi_heads | in_channels: 1024
+roi_box_feature_extractor.py | create feature extractor for RESNET-50
+generalized_rcnn.py | Do not use external proposals, so use RPN.
+rpn.py | build_rpn | in_channels: 1024
+roi_heads.py | build_roi_heads | in_channels: 1024
+roi_box_feature_extractor.py | create feature extractor for RESNET-50
+Selected optimization level O0:  Pure FP32 training.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+2025-01-03 15:35:45,924 Maskrcnn_benchmark_target_model INFO: Overriding ckpt config with last_checkpoint
+2025-01-03 15:35:45,924 Maskrcnn_benchmark_target_model INFO: Loading checkpoint from output/10-10/IOD_LR005_BS2_ALPHA01_BETA05_GAMMA05_id/STEP1/model_final.pth
+2025-01-03 15:35:46,112 Maskrcnn_benchmark_target_model INFO: Loading optimizer from output/10-10/IOD_LR005_BS2_ALPHA01_BETA05_GAMMA05_id/STEP1/model_final.pth
+2025-01-03 15:35:46,171 Maskrcnn_benchmark_target_model INFO: Loading scheduler from output/10-10/IOD_LR005_BS2_ALPHA01_BETA05_GAMMA05_id/STEP1/model_final.pth
+Start iteration: 15000
+voc.py | in training with box rehearsal memory mode
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/diningtable_trainval.txt
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/dog_trainval.txt
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/horse_trainval.txt
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/motorbike_trainval.txt
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/person_trainval.txt
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/pottedplant_trainval.txt
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/sheep_trainval.txt
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/sofa_trainval.txt
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/train_trainval.txt
+TXT FILE data/VOCdevkit/VOC2007/ImageSets/Main/tvmonitor_trainval.txt
+voc.py | load_img_from_NEW_cls | total used number of new images in trainval: 3252
+--PBS REPORT-- Current prototype boxes path is None
+voc.py | load_boxes_from_old_mem | total used number of boexes: 2000
+('voc_rb_2007_trainval',)
+Dataset voc_rb_2007_trainval contains 3252 images.
+Finish loading data
+2025-01-03 15:35:46,848 Maskrcnn_benchmark_target_model INFO: Saving checkpoint to output/10-10/IOD_LR005_BS2_ALPHA01_BETA05_GAMMA05_id/STEP1/model_trimmed.pth
+generalized_rcnn.py | Do not use external proposals, so use RPN.
+rpn.py | build_rpn | in_channels: 1024
+roi_heads.py | build_roi_heads | in_channels: 1024
+roi_box_feature_extractor.py | create feature extractor for RESNET-50
+#### The model will be saved at output/10-10/IOD_LR005_BS2_ALPHA01_BETA05_GAMMA05_id/STEP1 in test phase.
+#### The model weight used in test phase is: output/10-10/LR005_BS4_FILOD/model_trimmed.pth.
+voc.py | in test mode
+Dataset voc_2007_test contains 4952 images.
+inference.py | alphabetical_order: False
+inference.py | alphabetical_order: False
+do voc evaluation
+mAP: 0.7013
+aeroplane       : 0.7081
+bicycle         : 0.7578
+bird            : 0.6799
+boat            : 0.5409
+bottle          : 0.5556
+bus             : 0.7078
+car             : 0.8425
+cat             : 0.7422
+chair           : 0.4862
+cow             : 0.6829
+diningtable     : 0.6612
+dog             : 0.8018
+horse           : 0.8534
+motorbike       : 0.7871
+person          : 0.8421
+pottedplant     : 0.4415
+sheep           : 0.7506
+sofa            : 0.6931
+train           : 0.7876
+tvmonitor       : 0.7626
+
+nan,0.708129282016452,0.7577652834340273,0.6799264082024473,0.5409255037326048,0.555557895696672,0.7078138521071566,0.8425016348828547,0.7422015322206652,0.48624540241617853,0.6829254596017381,0.6611941103436916,0.8018184154836827,0.8534353750501005,0.7871145154303332,0.8420897567894947,0.44152917547134174,0.7505773312988615,0.693097243210753,0.7876173770182142,0.7625707916481343
